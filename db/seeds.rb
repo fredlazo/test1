@@ -1,5 +1,15 @@
 require 'random_data'
 
+# Create Advertisements
+10.times do
+  Advertisement.create!(
+    title:  RandomData.random_sentence,
+    body:   RandomData.random_paragraph,
+    price:  RandomData.random_number
+  )
+
+end
+
 # Create Posts
 50.times do
 # #1
